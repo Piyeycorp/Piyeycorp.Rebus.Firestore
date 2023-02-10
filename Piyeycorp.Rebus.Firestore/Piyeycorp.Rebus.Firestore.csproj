@@ -4,7 +4,29 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>Rebus</RootNamespace>
     <AssemblyName>Piyeycorp.Rebus.Firestore</AssemblyName>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Piyeycorp/Piyeycorp.Rebus.Firestore</RepositoryUrl>
+    <PackageIcon>little_rebusbus2_copy-500x500.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>rebus;persistence;firestore</PackageTags>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\artwork\little_rebusbus2_copy-500x500.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Google.Cloud.Firestore" Version="3.0.0" />
